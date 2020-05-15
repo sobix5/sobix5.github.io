@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Succes Counter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+            
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fdc2456db7.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        
+
+    </head>
+
+    <body>
+        <div id="show">
+            <h1 id="title">Tittle</h1>
+            <h2><span id="valueText">0</span> <span id="maxVal"> / 50</span></h2>
+        </div>
+        <div id="param">
+            <div id="first">
+                <button class="btn btn-primary" id="minus" type="button"><i class="fas fa-minus"></i></i></button>
+                <button class="btn btn-primary" id ="plus" type="button"><i class="fas fa-plus"></i></button>
+            </div>           
+            <div>
+                <input type="text" class="form-control" id="newTitle" placeholder="Tittle"></input>
+                <button class="btn btn-primary" id="setTitle" type="button"> <i class="fas fa-check"></i></button>
+            </div>
+            <div>
+                <input type="text" class="form-control" id="newValue" placeholder="Default value"></input>
+                <button class="btn btn-primary" id="setValue" type="button"> <i class="fas fa-check"></i></button>
+            </div>
+            <div>
+                <input type="text" class="form-control" id="newMaxVal" placeholder="Max value"></input>
+                <button class="btn btn-primary" id="setMaxVal" type="button"> <i class="fas fa-check"></i></button>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="bgColor" data-toggle="dropdown">Background Color</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" id="bgRed"><i class="fas fa-circle" style="color: red;"></i>  Red</a></li>
+                    <li><a class="dropdown-item" href="#" id="bgGreen"><i class="fas fa-circle" style="color: green;"></i>  Green</a></li>
+                    <li><a class="dropdown-item" href="#" id="bgBlue"><i class="fas fa-circle" style="color: blue;"></i>  Blue</a></li>
+                    <li><a class="dropdown-item" href="#" id="bgBlack"><i class="fas fa-circle" style="color: black;"></i>  Black</a></li>
+                    <li><a class="dropdown-item" href="#" id="bgWhite"><i class="far fa-circle" style="color: gray;"></i>  White</a></li> 
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="bgColor" data-toggle="dropdown">Text Color</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" id="txtRed"><i class="fas fa-circle" style="color: red;"></i>  Red</a></li>
+                    <li><a class="dropdown-item" href="#" id="txtGreen"><i class="fas fa-circle" style="color: green;"></i>  Green</a></li>
+                    <li><a class="dropdown-item" href="#" id="txtBlue"><i class="fas fa-circle" style="color: blue;"></i>  Blue</a></li>
+                    <li><a class="dropdown-item" href="#" id="txtBlack"><i class="fas fa-circle" style="color: black;"></i>  Black</a></li>
+                    <li><a class="dropdown-item" href="#" id="txtWhite"><i class="far fa-circle" style="color: gray;"></i>  White</a></li> 
+                </ul>
+            </div>            
+        </div>
+
+
+
+        
+        <footer>
+            <p>Developed by <a href="http://martinledrut.fr" target="_blank">Martin Ledrut</a></p>
+            <a href="https://github.com/sobix5/succes-counter" target="_blank"><i class="fab fa-github"></i></a>
+        </footer>
+    </body>
+</html>
